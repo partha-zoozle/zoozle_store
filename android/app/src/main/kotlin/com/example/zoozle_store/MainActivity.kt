@@ -1,5 +1,8 @@
 package com.example.zoozle_store
 
-import io.flutter.embedding.android.FlutterActivity
+import io.flutter.embedding.android.FlutterFragmentActivity
+import java.util.*
 
-class MainActivity: FlutterActivity()
+class MainActivity: FlutterFragmentActivity(){
+
+}
