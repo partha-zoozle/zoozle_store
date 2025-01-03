@@ -1,23 +1,11 @@
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
 class ProductPurchaseController extends GetxController {
-  //TODO: Implement ProductPurchaseController
+  TextEditingController phoneNumberController = TextEditingController();
+  TextEditingController nameController = TextEditingController();
+  TextEditingController emailController = TextEditingController();
 
-  final count = 0.obs;
-  @override
-  void onInit() {
-    super.onInit();
-  }
-
-  @override
-  void onReady() {
-    super.onReady();
-  }
-
-  @override
-  void onClose() {
-    super.onClose();
-  }
-
-  void increment() => count.value++;
+  var dropdownItems = ["Option 1", "Option 2", "Option 3", "Option 4"];
+  var selectedValue = "Option 1".obs; // Default selected value
 }

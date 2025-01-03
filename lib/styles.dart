@@ -121,23 +121,23 @@ class Styles {
         navigationBarTheme: Theme.of(context)
             .navigationBarTheme
             .copyWith(indicatorColor: const Color(0xFFC5CDFF)),
-        fontFamily: GoogleFonts.jost().fontFamily,
+        fontFamily: GoogleFonts.inter().fontFamily,
         textTheme: TextTheme(
           titleMedium: Theme.of(context).textTheme.titleMedium?.copyWith(
             fontWeight: FontWeight.w600,
-            fontFamily: GoogleFonts.jost().fontFamily,
+            fontFamily: GoogleFonts.inter().fontFamily,
           ),
           titleSmall: Theme.of(context).textTheme.titleSmall?.copyWith(
             fontWeight: FontWeight.w600,
-            fontFamily: GoogleFonts.jost().fontFamily,
+            fontFamily: GoogleFonts.inter().fontFamily,
           ),
           labelLarge: Theme.of(context).textTheme.labelLarge?.copyWith(
             fontWeight: FontWeight.w600,
-            fontFamily: GoogleFonts.jost().fontFamily,
+            fontFamily: GoogleFonts.inter().fontFamily,
           ),
           labelMedium: Theme.of(context).textTheme.labelMedium?.copyWith(
             fontWeight: FontWeight.w600,
-            fontFamily: GoogleFonts.jost().fontFamily,
+            fontFamily: GoogleFonts.inter().fontFamily,
           ),
         ));
   }

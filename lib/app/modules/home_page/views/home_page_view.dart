@@ -91,14 +91,18 @@ class HomePageView extends StatelessWidget {
               onPressed: () async {
                 final result = await Get.toNamed(Routes.QR_SCANNER);
                 if (result != null) {
-                  Get.snackbar('QR Code Scanned', 'Data: $result',
-                      snackPosition: SnackPosition.BOTTOM);
+
                 }
               },
               icon: const Icon(Icons.qr_code, color: Colors.white),
               label: const Text(
                 'Scan QR',
                 style: TextStyle(color: Colors.white),
+              ),
+              style: FilledButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8), // Optional: for rounded corners
+                ),
               ),
             ),
           ),

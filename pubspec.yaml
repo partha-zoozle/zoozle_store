@@ -21,6 +21,8 @@ dependencies:
   google_mlkit_barcode_scanning: ^0.13.0
   camera: ^0.10.6
   typed_data: ^1.4.0
+  firebase_remote_config: ^5.2.0
+  cached_network_image: ^3.4.1
 
 dev_dependencies:
   flutter_test:

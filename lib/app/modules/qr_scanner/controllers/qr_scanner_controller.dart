@@ -124,13 +124,10 @@ class QrScannerController extends GetxController {
   Future<void> _processBarcodeImage(InputImage inputImage) async {
     try {
       final barcodes = await _barcodeScanner.processImage(inputImage);
-
       if (barcodes.isNotEmpty) {
         final barcodeValue = barcodes.first.rawValue;
         scannedData.value = barcodeValue ?? '';
         print("Barcode detected: $barcodeValue");
-      } else {
-        print("No barcodes detected.");
       }
     } catch (e) {
       print("Error processing image: $e");
